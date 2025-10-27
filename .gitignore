@@ -1,0 +1,96 @@
+outputs/
+data/
+*.pyc
+*__pycache__
+.vscode/
+embodiedbench/envs/eb_manipulation/generate_dataset.sh
+embodiedbench/envs/eb_manipulation/tools/__pycache__/grasploc.cpython-39.pyc
+*running
+running/
+*.DS_Store
+embodiedbench.egg-info/
+*outdated
+embodiedbench/envs/manipulaThor1
+embodiedbench.egg-info1
+embodiedbench/envs/eb_habitat/data/
+dockers
+
+# Temporary files
+tmp*
+*.out
+nohup.out
+
+# Miscellaneous files
+*.tex
+figure/
+logs/
+CoppeliaSim_Pro_V4_1_0_Ubuntu20_04/
+PyRep/
+*.lua
+match_algor.py
+example_pred.py
+server.py
+analyze_errors.py
+classify_errors_detailed.py
+create_error_visualization.py
+run_baseline_error_analysis.sh
+
+# Image files in root
+/*.jpg
+/*.png
+
+# Model weights
+yolo11n.pt
+*.pt
+
+# Analysis scripts in utils (keep local, not in git)
+utils/analyze_timing.py
+utils/get_kws.py
+utils/get_stats.py
+
+# Running results inside evaluator
+embodiedbench/evaluator/running/
+# Documentation (keep local)
+REFACTORING_SUMMARY.md
+FOLDER_ORGANIZATION_SUMMARY.md
+embodiedbench/TASK_STRUCTURE.md
+
+# Duplicate files (use organized structure instead)
+embodiedbench/evaluator/eb_alfred_evaluator_esca.py
+embodiedbench/evaluator/eb_alfred_evaluator_gd_laser.py
+embodiedbench/evaluator/eb_esca_navigation_evaluator.py
+embodiedbench/evaluator/eb_gd_laser_navigation_evaluator.py
+embodiedbench/planner/vlm_planner_esca.py
+embodiedbench/planner/nav_planner_esca.py
+embodiedbench/planner/vlm_planner_gd_laser.py
+embodiedbench/planner/nav_planner_gd_laser.py
+
+# Large data files
+embodiedbench/envs/eb_alfred/data/alfred_prompt_examples.json
+embodiedbench/envs/*/data/*.json
+
+# Old duplicate evaluator/planner files (use organized folders instead)
+embodiedbench/evaluator/eb_alfred_evaluator_gd.py
+embodiedbench/evaluator/eb_gd_navigation_evaluator.py
+embodiedbench/planner/vlm_planner_gd.py
+embodiedbench/planner/nav_planner_gd.py
+embodiedbench/planner/nav_planner_sg.py
+embodiedbench/evaluator/eb_navigation_evaluator_sg_baseline.py
+
+# Root-level evaluator/planner files (use organized folders instead)
+embodiedbench/evaluator/eb_alfred_evaluator.py
+embodiedbench/evaluator/eb_habitat_evaluator.py
+embodiedbench/evaluator/eb_navigation_evaluator.py
+embodiedbench/evaluator/eb_manipulation_evaluator.py
+embodiedbench/evaluator/eb_vla_manipulation_evaluator.py
+embodiedbench/planner/vlm_planner.py
+embodiedbench/planner/nav_planner.py
+embodiedbench/planner/manip_planner.py
+embodiedbench/planner/manip_planner_vla.py
+
+# Data symbolic links
+data
+embodiedbench/evaluator/data
+embodiedbench/data
+embodiedbench/envs/data
+embodiedbench/envs/*/data

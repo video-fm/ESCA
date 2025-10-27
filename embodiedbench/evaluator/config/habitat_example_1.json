@@ -1,0 +1,9 @@
+    "Human instruction: Displace the sponge from the left counter.\n
+    Output: {
+    'language_plan': 'To accomplish this task, the robot should navigate to the left counter to pick up the sponge. 
+    It should then move to another location, such as table 2, and place the sponge there.', 
+    'executable_plan': 
+        [{'action_id': 11, 'action_name': 'navigate to the left counter in the kitchen'}, 
+        {'action_id': 28, 'action_name': 'pick up the sponge'}, 
+        {'action_id': 7, 'action_name': 'navigate to the table 2'},
+         {'action_id': 51, 'action_name': 'place at the table 2'}]}",

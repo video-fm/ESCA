@@ -1,0 +1,38 @@
+[
+  {
+    "instruction": "Place book on right bedside table",
+    "scene_analysis": {
+      "target_state": "The book should be placed on the right bedside table (from the robot's perspective).",
+      "current_state": "There is a book on the bed and two bedside tables - one on the left and one on the right.",
+      "spatial_focus": "RIGHT bedside table specifically, not just any table",
+      "target_objects": ["book", "right_bedside_table"],
+      "current_objects": ["book", "bed", "left_bedside_table", "right_bedside_table"],
+      "target_relations": [["book", "on", "right_bedside_table"]]
+    },
+    "plan": [
+      {"action_id": 54, "action_name": "find a Book"},
+      {"action_id": 94, "action_name": "pick up the Book"}, 
+      {"action_id": 59, "action_name": "find a SideTable"},
+      {"action_id": 133, "action_name": "put down the object in hand"}
+    ],
+    "spatial_note": "The 'find a SideTable' action should locate the RIGHT table based on the instruction context."
+  },
+  {
+    "instruction": "Put the mug on the left counter",
+    "scene_analysis": {
+      "target_state": "The mug should be placed on the left counter (from robot's perspective).",
+      "current_state": "There is a mug on a table and counters on both left and right sides.",
+      "spatial_focus": "LEFT counter specifically",
+      "target_objects": ["mug", "left_counter"],
+      "current_objects": ["mug", "table", "left_counter", "right_counter"],
+      "target_relations": [["mug", "on", "left_counter"]]
+    },
+    "plan": [
+      {"action_id": 65, "action_name": "find a Mug"},
+      {"action_id": 108, "action_name": "pick up the Mug"},
+      {"action_id": 39, "action_name": "find a CounterTop"},
+      {"action_id": 133, "action_name": "put down the object in hand"}
+    ],
+    "spatial_note": "The robot must identify which counter is 'left' from its current viewpoint."
+  }
+]
