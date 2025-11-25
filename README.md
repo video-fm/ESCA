@@ -178,7 +178,7 @@ conda activate embench_nav
 python -m embodiedbench.envs.eb_navigation.EBNavEnv
 ```
 
-## EB-Manipulation
+### EB-Manipulation
 * Install Coppelia Simulator
 
 CoppeliaSim V4.1.0 required for Ubuntu 20.04; you can find other versions here (https://www.coppeliarobotics.com/previousVersions#)
@@ -198,20 +198,20 @@ mv CoppeliaSim_Pro_V4_1_0_Ubuntu20_04/ /PATH/YOU/WANT/TO/PLACE/COPPELIASIM
 mv /path/to/downloaded/model_file.model /path/to/EmbodiedBench/models/
 ```
 
-## Start Headless Server
+### Start Headless Server
 Please run startx.py script before running experiment on headless servers. The server should be started in another tmux window. We use X_DISPLAY id=1 by default.
 ```bash
 python -m embodiedbench.envs.eb_alfred.scripts.startx 1
 ```
 
-## Running Evaluators
+### Running Evaluators
 
 EmbodiedBench now uses an organized task-based structure. Evaluators are organized by task (alfred, navigation, habitat, manipulation) with three variants:
 - **base**: Baseline VLM implementation
 - **gd**: Grounding DINO integration  
 - **esca**: Enhanced Scene Context Awareness (LASER + Grounding DINO)
 
-### EB-ALFRED Evaluators
+#### EB-ALFRED Evaluators
 
 Run the baseline evaluator:
 ```bash
@@ -231,7 +231,7 @@ conda activate embench
 python -m embodiedbench.evaluator.alfred.esca
 ```
 
-### EB-Navigation Evaluators
+#### EB-Navigation Evaluators
 
 Run the baseline evaluator:
 ```bash
@@ -251,14 +251,14 @@ conda activate embench_nav
 python -m embodiedbench.evaluator.navigation.esca
 ```
 
-### EB-Habitat Evaluator
+#### EB-Habitat Evaluator
 
 ```bash
 conda activate embench
 python -m embodiedbench.evaluator.habitat.base
 ```
 
-### EB-Manipulation Evaluators
+#### EB-Manipulation Evaluators
 
 Run the baseline evaluator:
 ```bash
@@ -272,7 +272,7 @@ conda activate embench_man
 python -m embodiedbench.evaluator.manipulation.vla
 ```
 
-### Alternative: Using main.py interface
+#### Alternative: Using main.py interface
 
 You can also use the unified main.py interface:
 ```bash
@@ -290,7 +290,7 @@ All evaluators support various configuration options through command-line argume
 - `top_k`: Number of top predictions to consider
 - `aggr_thres`: Aggregation threshold for predictions
 
-# Citation
+## Citation
 ```
 @inproceedings{huang2025esca,
       title={ESCA: Contextualizing Embodied Agents via Scene-Graph Generation}, 
