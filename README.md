@@ -11,19 +11,31 @@
 
 [Jiani Huang](https://www.cis.upenn.edu/~jianih/) • [Amish Sethi](https://amishsethi.github.io/personal-website/) • [Matthew Kuo](https://www.linkedin.com/in/kuomat/) • [Mayank Keoliya](https://www.seas.upenn.edu/~mkeoliya/) • [Neelay Velingker](https://nvelingker.github.io/) • [JungHo Jung](https://www.linkedin.com/in/diffunity/) • [Ser-Nam Lim](https://sites.google.com/site/sernam) • [Ziyang Li](https://liby99.github.io/) • [Mayur Naik](https://www.cis.upenn.edu/~mhnaik/)
 
-**University of Pennsylvania** · **University of Central Florida**
+**University of Pennsylvania** · 
+**Johns Hopkins University** ·
+**University of Central Florida**
 </div>
 
 ---
 
+## 🎯 What does ESCA do?
 
-# Overview
+<div align="center">
+  <img src="docs/images/ESCA-pipeline.png" alt="ESCA pipeline" width="90%"/> 
+  <p><em>ESCA contextualizes task planners with grounded visual features represented as scene graphs, enabling more precise and context-aware embodied agent decision-making.</em></p>
+</div>
+
+---
+
+## News
+- **[2025.10.28]** 🎉 [ESCA](https://github.com/video-fm/ESCA), demonstrating the usage of LASER model in an embodied environment, is accepted as **NeurIPS 2025 Spotlight**!  
+- **[2025.08.30]** 🤗 We have open sourced our [scene graph generation model](https://huggingface.co/video-fm/vine_v0)
+- **[2025.08.30]** 📊 We have open sourced our [training data](https://huggingface.co/datasets/video-fm/ESCA-video-87K)
+
+## Overview
 We introduce **ESCA** (Embodied and Scene-Graph Contextualized Agent), a framework designed to contextualize Multi-modal Large Language Models (MLLMs) through open-domain scene graph generation. ESCA provides structured visual grounding, helping MLLMs make sense of complex and ambiguous sensory environments. At its core is SGClip, a CLIP-based model that captures semantic visual features, including entity classes, physical attributes, actions, interactions, and inter-object relations.
 
-ESCA operates as a multi-stage pipeline, generating task-aware scene graphs that reflect both visual content and human instructions. Through experiments on two challenging embodied environments, we demonstrate that ESCA consistently improves the performance of all evaluated MLLMs, including both open-source and proprietary models.
-
-
-## 🚀 **Key Features**
+### 🚀 **Key Features**
 
 - 🛠️ **Structured Scene Understanding:**
   ESCA decomposes visual understanding into four modular stages: concept extraction, object identification, scene graph prediction, and visual summarization.
@@ -40,7 +52,7 @@ ESCA operates as a multi-stage pipeline, generating task-aware scene graphs that
 - 🔧 **Neurosymbolic Learning:**
   A model-driven, self-supervised learning pipeline that eliminates the need for manual scene graph annotations.
 
-# 🖥️ Installation
+## 🖥️ Installation
 **Note: we need to install three conda environments, one for EB-ALFRED and EB-Habitat, one for EB-Navigation, and one for EB-Manipulation. Please use ssh download instead of HTTP download to avoid error during git lfs pull.**
 
 Download repo
@@ -126,13 +138,13 @@ git lfs install
 git lfs pull
 ```
 
-## Start Headless Server
+### Start Headless Server
 Please run startx.py script before running experiment on headless servers. The server should be started in another tmux window. We use X_DISPLAY id=1 by default.
 ```bash
 python -m embodiedbench.envs.eb_alfred.scripts.startx 1
 ```
 
-## EB-Alfred
+### EB-Alfred
 Download dataset from huggingface.
 ```bash
 # Create checkpoints directory
@@ -147,7 +159,7 @@ wget https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0/gro
 export GROUNDING_DINO_PATH=/path/to/your/GroundingDINO
 ```
 
-### SAM 2.1 Setup
+#### SAM 2.1 Setup
 1. Clone the SAM2 repository inside the EmbodiedBench folder:
 ```bash
 git clone https://github.com/facebookresearch/sam2.git
@@ -158,7 +170,7 @@ git clone https://github.com/facebookresearch/sam2.git
 export SAM_REPO_PATH=/path/to/your/SAM2
 ```
 
-## EB-Navigation
+### EB-Navigation
 
 Run the following code to ensure the EB-Navigation environment is working correctly.
 ```bash
