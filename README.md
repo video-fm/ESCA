@@ -1,9 +1,20 @@
-<h1 align="center">
-<img src="docs/images/embodied-logo.png" alt="embodied-logo" width="40" height="40" style="vertical-align: middle; margin-top: -12px;">
-EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents
-</h1>
+<div align="center">
+  
+  
+  <h1><img src="docs/images/esca_logo.png" alt="ESCA Logo" width="45"/> ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</h1>
+
+  [![Paper](https://img.shields.io/badge/arXiv-ESCA_paper-b31b1b.svg)](https://arxiv.org/abs/2304.07647)
+  [![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-ESCA--video--87K-yellow)](https://huggingface.co/datasets/video-fm/ESCA-video-87K)
+  [![Model](https://img.shields.io/badge/🤗%20HuggingFace-SGCLIP--model-green)](https://huggingface.co/video-fm/vine_v0)
+  [![Code](https://img.shields.io/badge/GitHub-LASER_code-blue?logo=github)](https://github.com/video-fm/ESCA)
 
 
+[Jiani Huang](https://www.cis.upenn.edu/~jianih/) • [Amish Sethi](https://amishsethi.github.io/personal-website/) • [Matthew Kuo](https://www.linkedin.com/in/kuomat/) • [Mayank Keoliya](https://www.seas.upenn.edu/~mkeoliya/) • [Neelay Velingker](https://nvelingker.github.io/) • [JungHo Jung](https://www.linkedin.com/in/diffunity/) • [Ser-Nam Lim](https://sites.google.com/site/sernam) • [Ziyang Li](https://liby99.github.io/) • [Mayur Naik](https://www.cis.upenn.edu/~mhnaik/)
+
+**University of Pennsylvania** · **University of Central Florida**
+</div>
+
+---
 
 
 # Overview
@@ -269,10 +280,10 @@ All evaluators support various configuration options through command-line argume
 
 # Citation
 ```
-@article{yang2025embodiedbench,
-  title={EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents},
-  author={Yang, Rui and Chen, Hanyang and Zhang, Junyu and Zhao, Mark and Qian, Cheng and Wang, Kangrui and Wang, Qineng and Koripella, Teja Venkat and Movahedi, Marziyeh and Li, Manling and others},
-  journal={arXiv preprint arXiv:2502.09560},
-  year={2025}
+@inproceedings{huang2025esca,
+      title={ESCA: Contextualizing Embodied Agents via Scene-Graph Generation}, 
+      author={Jiani Huang, Amish Sethi, Matthew Kuo, Mayank Keoliya, Neelay Velingker, JungHo Jung, Ser-Nam Lim, Ziyang Li, Mayur Naik},
+      year={2025},
+      booktitle={The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)},
 }
 ```
