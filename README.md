@@ -291,11 +291,22 @@ All evaluators support various configuration options through command-line argume
 - `aggr_thres`: Aggregation threshold for predictions
 
 ## Citation
+
+Our experiments is developed on the EmbodiedBench benchmark; if you use ESCA or EmbodiedBench in your research, please consider cite the works below. 
 ```
 @inproceedings{huang2025esca,
       title={ESCA: Contextualizing Embodied Agents via Scene-Graph Generation}, 
       author={Jiani Huang, Amish Sethi, Matthew Kuo, Mayank Keoliya, Neelay Velingker, JungHo Jung, Ser-Nam Lim, Ziyang Li, Mayur Naik},
       year={2025},
       booktitle={The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS)},
+}
+
+@inproceedings{
+      yang2025embodiedbench,
+      title={EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents},
+      author={Rui Yang and Hanyang Chen and Junyu Zhang and Mark Zhao and Cheng Qian and Kangrui Wang and Qineng Wang and Teja Venkat Koripella and Marziyeh Movahedi and Manling Li and Heng Ji and Huan Zhang and Tong Zhang},
+      booktitle={Forty-second International Conference on Machine Learning},
+      year={2025},
+      url={https://openreview.net/forum?id=DgGF2LEBPS}
 }
 ```
