@@ -6,7 +6,7 @@
   [![Paper](https://img.shields.io/badge/arXiv-ESCA_paper-b31b1b.svg)](https://arxiv.org/abs/2510.15963)
   [![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-ESCA--video--87K-yellow)](https://huggingface.co/datasets/video-fm/ESCA-video-87K)
   [![Model](https://img.shields.io/badge/🤗%20HuggingFace-SGCLIP--model-green)](https://huggingface.co/video-fm/vine_v0)
-  [![Code](https://img.shields.io/badge/GitHub-LASER_code-blue?logo=github)](https://github.com/video-fm/ESCA)
+  [![Code](https://img.shields.io/badge/GitHub-ESCA_code-blue?logo=github)](https://github.com/video-fm/ESCA)
 
 
 [Jiani Huang](https://www.cis.upenn.edu/~jianih/) • [Amish Sethi](https://amishsethi.github.io/personal-website/) • [Matthew Kuo](https://www.linkedin.com/in/kuomat/) • [Mayank Keoliya](https://www.seas.upenn.edu/~mkeoliya/) • [Neelay Velingker](https://nvelingker.github.io/) • [JungHo Jung](https://www.linkedin.com/in/diffunity/) • [Ser-Nam Lim](https://sites.google.com/site/sernam) • [Ziyang Li](https://liby99.github.io/) • [Mayur Naik](https://www.cis.upenn.edu/~mhnaik/)
