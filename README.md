@@ -3,7 +3,7 @@
   
   <h1><img src="docs/images/esca_logo.png" alt="ESCA Logo" width="45"/> ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</h1>
 
-  [![Paper](https://img.shields.io/badge/arXiv-ESCA_paper-b31b1b.svg)](https://arxiv.org/abs/2304.07647)
+  [![Paper](https://img.shields.io/badge/arXiv-ESCA_paper-b31b1b.svg)](https://arxiv.org/abs/2510.15963)
   [![Dataset](https://img.shields.io/badge/🤗%20HuggingFace-ESCA--video--87K-yellow)](https://huggingface.co/datasets/video-fm/ESCA-video-87K)
   [![Model](https://img.shields.io/badge/🤗%20HuggingFace-SGCLIP--model-green)](https://huggingface.co/video-fm/vine_v0)
   [![Code](https://img.shields.io/badge/GitHub-LASER_code-blue?logo=github)](https://github.com/video-fm/ESCA)
